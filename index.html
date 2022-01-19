@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- 
+  This is an HTML comment
+
+  I generated the HTML page structure by using Emmet in VS Code. Type ! and hit TAB. 
+  See the HTML Template page in the Content section of Learning Suite for more info
+
+   BTW - never put a comment before the <!DOCTYPE html> all HTML files MUST 
+   begin with that DOCTYPE tag.
+  
+   Make sure you use the Beautify extension to format your HTML so that it's 
+   indented consistently. See "Tools needed for the course" in the content section 
+   of Learning Suite.
+
+   And don't forget to validate your page at https://validator.nu/ 
+   Select the options "Show image report" which will display image alt text and 
+   "Show outline" so you make sure your headers are hierarchical. 
+   Make sure you don't have any warnings or errors.
+
+   Finally, if you make changes and re-upload your file, make sure to clear the 
+   browser cache with Ctrl-shift-R or Cmd-shift-R so that the changes will show.
+   Github tends to run slow in the late afternoon and night when all the programmers
+   are awake.
+  -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pigeons aren't real</title>
+  <!-- don't forget to add a meta description Emmet: meta:desc -->
+  <meta name="description" content="Fact-based evidence proving that pigeons are sophisticated US spy drones.">
+
+  <!-- Normalize CSS - each different browser will have its own styles for displaying HTML elements. 
+    Normalize CSS will reset the browser styles so your page will look the same across all browsers. 
+    It's not required for this assignment, but it will be once we start CSS. It can't hurt to add it now. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+</head>
+
+<body>
+  <!-- typically a <header> will contain info that's displayed at the top of each page, such 
+    as a <nav> menu. However, headers can be used in other areas of the page -->
+  <header>
+    <nav>
+      <!-- <ul> is an unordered list, by default it will display bulleted list items
+
+      menus are lists of links, so use a <ul>. -->
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Form</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- <main> is, as the tag reads, the main part of the page. Include the relevant 
+    information here, which would be your articles. To make the layout easier when we 
+    get to CSS, your <aside> should not be inside <main>. -->
+  <main>
+
+    <!-- it's standard practice to have just one <h1> per page. Make sure it's relevant 
+      and makes it easy for users and search engines to understand what the page is about. -->
+    <h1>Pigeons aren't real</h1>
+
+    <!-- best practice is that each article should have a heading. If they don't you will get 
+      a validator warning. Since it's the next level below <h1>, use <h2> -->
+    <article>
+      <h2>Not what they seem</h2>
+      <p>The once noble pigeon has been warped and transformed into a sickly, disease-ridden bird that huddles in gray
+        masses, scavenging our city streets for discarded chicken bones and soggy french fries. They rummage through
+        pungent city trash cans scratching the last bits of spoiled food from discarded takeout containers. They are
+        ubiquitous in US cities. But harmless? Think again.</p>
+
+      <!-- you will see an <em> - emphasis tag inside this paragraph. <em> elements are usually 
+        displayed in italics, but you can override the display with CSS -->
+      <p>Consider this: <em>have you ever seen a baby pigeon?</em> Isn't that enough to convince you that something
+        nefarious is going on?</p>
+    </article>
+
+    <!-- deciding how to break text into articles is subjective. Again, there are no set rules. 
+      Since you need two articles, I arbitrarily split my text into articles here :) -->
+    <article>
+      <h2>Deep state operatives</h2>
+      <p>Pigeons are working as biotech spies for the government. Loaded with surveillance technology, the pigeons spy
+        on the public, collecting your private data and transmitting it directly to the DSIA &ndash; the secret Deep
+        State Intelligence Agency inside the CIA.</p>
+
+      <p>Our army of patriot hackers intercepted CIA emails. The level of deceit by our government is without precedent.
+      </p>
+
+      <!-- here is my figure. Notice the placement of figcaption -->
+      <figure>
+        <!-- since we haven't covered directories, upload your image with your index.html
+          Eventually you will need to move all images to an images/ subdirectory, so if you
+          know to do that, go ahead.
+          
+          In early web dev, everyone added image width and height because images downloaded
+          slowly and they wanted the browser to reserve a space for the image so the text didn't
+          "jump" when the image arrived (you can see this jump on mobile sites that take forever
+          to load ads -- ad companies are the worst at writing code). As responsive sites
+          became popular, they stopped using height and width in the HTML. The pendulum has
+          swung back and developers are adding height and width again to the HTML to clue 
+          the browser to the image aspect ratio. NEVER use height and width in HTML to 
+          resize an image. Use the exact image height and width.
+
+          ALSO: NO SPACES IN IMAGE NAMES. THE WEB DOESN'T LIKE SPACES; IT PREFERS %20 in URLs which causes problems.
+          -->
+        <img src="pigeon-diagram.jpg" alt="diagram of a pigeon drone" width="400" height="340" loading="lazy">
+        <figcaption>Diagram of a pigeon drone</figcaption>
+      </figure>
+
+      <p>They want you to think these birds are trash. They want you to ignore them. And you do &ndash; but at what
+        price? Your freedom!</p>
+
+      <!-- make sure you have three levels of headings. The content doesn't matter so don't worry 
+        if it seems forced. I care only about the HTML, although it is fun to read your pages -->
+      <h3>Terms you should know</h3>
+      <p>These seem like harmless phrases, but be aware when the fake news uses them:</p>
+
+      <!-- here is a definition list, it's like a vocabulary list you see in textbooks. 
+        Make sure to have a <dt> - a term and a <dd> - a definition for each term -->
+      <dl>
+        <dt>Conservation</dt>
+        <dd>A government plot to enable more bird drones to infiltrate our country</dd>
+        <dt>NASA</dt>
+        <dd>National Association to Steal All personal information</dd>
+        <dt>Antarctica</dt>
+        <dd>A government wall around the [flat] earth to keep drones from flying away</dd>
+      </dl>
+    </article>
+  </main>
+
+  <!-- your aside should also have a header. Headers help the reader easily identify what 
+    each section of the page is about -->
+  <aside>
+    <h2>Tips for encounters</h2>
+    <p>If you happen upon a pigeon, we recommend you take the following steps to protect yourself and your privacy:</p>
+
+    <!-- an <ol> is an ordered list. It will display numbered list items -->
+    <ol>
+      <li>Fill your pockets with spoiled food and/or roll around in week-old garbage. We recommend dumpster diving at
+        restaurants that predominantly serve chicken, such as Popeye's or KFC</li>
+      <li>Find a lone pigeon and slowly approach it</li>
+
+      <!-- notice how the nested list is inside an <li>. A <ul> or <ol> can only have <li> as direct 
+        children. If you have another <ul> at the same level as an <li>, you will receive a validator 
+          error. This is the correct way to nest lists  -->
+      <li>Assert dominance over the bird
+        <ul>
+          <li>Maintain eye contact with the bird at all times</li>
+          <li>Never turn your back on it</li>
+          <li>Stand tall with your shoulders back</li>
+
+          <!--the <li> below has a <strong> element. <strong> elements are usually display as bold text, 
+            but like <em>, the display can be overridden with CSS -->
+          <li>Bob your head back and forth &ndash; <strong>this is key to pigeon dominance</strong></li>
+          <li>As you approach the bird, repeat "coo coo ca-choo" &ndash; a little louder each repeat &ndash; to show the
+            bird you are not only an equal, but a superior <em>(you might want to practice these noises and the head
+              bobbing before you encounter a pigeon &ndash; find our instructional videos on YouTube)</em></li>
+        </ul>
+      </li>
+      <li>Once you are within two feet of the bird, yell, as loudly as possible, <strong>"I know your secret. You are a
+          deep state drone. You cannot take my freedoms from me."</strong></li>
+    </ol>
+  </aside>
+
+  <!-- notice that the header, main, aside, and footer are all on the same level. If you open the 
+    Dev Tools you can see the tree structure (DOM - Document Object Model) of the levels of your HTML page. -->
+  <footer>
+    <!-- you don't have to have a <p> in your footer, but since I instructed you to do so in the assignment, 
+      use <p> tags -->
+    <p>Pigeons are the real threat to our democracy</p>
+  </footer>
+</body>
+
+</html>
